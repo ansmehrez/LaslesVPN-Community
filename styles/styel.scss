@@ -68,6 +68,8 @@ a {
 
   @include tablet {
     width: 100%;
+    gap: 60px;
+    margin: 0 auto;
   }
 }
 
@@ -183,6 +185,7 @@ a {
     flex-wrap: wrap;
     position: relative;
     left: 100px;
+    gap: 50px;
   }
 }
 
@@ -226,7 +229,7 @@ link {
   font-weight: 500;
   line-height: 70px;
   @include mobile {
-    width: 400px;
+    width: 365px;
   }
 }
 
@@ -253,6 +256,10 @@ link {
   flex-shrink: 0;
   border-radius: 10px;
   background-color: var(--color-soft-red);
+  @include tablet {
+    position: relative;
+    left: 120px;
+  }
 }
 
 .section__button {
@@ -275,7 +282,10 @@ link {
   @include tablet {
     width: 80%;
     column-gap: 0;
+    position: relative;
+    left: 50px;
   }
+
   @include smaler-than-a-tablet {
     width: 100%;
     flex-direction: column;
@@ -288,7 +298,6 @@ link {
     width: 100%;
   }
 }
-
 .details__group {
   display: flex;
   flex-direction: row;
@@ -356,6 +365,9 @@ link {
 .section-b {
   display: flex;
   flex-direction: row;
+  @include tablet {
+    justify-content: center;
+  }
 }
 
 .section__content-b {
@@ -381,6 +393,9 @@ link {
   font-style: normal;
   font-weight: 500;
   line-height: 50px;
+  @include mobile {
+    width: 365px;
+  }
 }
 
 .section__description-b {
@@ -390,7 +405,10 @@ link {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 187.5% */
+  line-height: 30px;
+  @include mobile {
+    width: 365px;
+  }
 }
 
 .Features {
@@ -666,6 +684,9 @@ link {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  @include mobile {
+    width: 300px;
+  }
 }
 
 .review-card:hover {
@@ -762,6 +783,12 @@ link {
   }
 }
 
+.subscribe__content {
+  @include mobile {
+    width: 350px;
+  }
+}
+
 .heading2-subsc {
   line-height: 45px;
   text-align: left;
@@ -769,6 +796,10 @@ link {
   font-weight: 500;
   color: var(--color-font-heading);
   margin-bottom: 20px;
+
+  @include mobile {
+    width: 350px;
+  }
 }
 
 .section__buttonnn {
@@ -785,6 +816,10 @@ link {
 .buttonnn {
   display: flex;
   align-items: center;
+  @include mobile {
+    position: relative;
+    left: -50px;
+  }
 }
 
 .help {
@@ -840,6 +875,7 @@ link {
 
   @include mobile {
     flex-direction: column;
+    gap: 45px;
     left: 0;
   }
 }
@@ -888,13 +924,13 @@ link {
   top: 281px;
   @include tablet {
     position: absolute;
-    right: 603px;
-    top: 32px;
+    right: 200px;
+    top: 60px;
   }
 
   @include mobile {
     position: absolute;
-    right: 255px;
-    top: 95px;
+    right: 205px;
+    top: 50px;
   }
 }
